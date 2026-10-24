@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Get in touch about a design or digital project.">
+    <meta name="theme-color" content="#071826">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact | Fluid Design">
+    <meta property="og:description" content="Contact details for the Fluid Design concept project.">
     <title>Contact | Fluid Design</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/flui-skin.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
 </head>
 
 <body>
-    <div class="home-section page-shell">
+    <div class="home-section page-shell ambient">
         <header class="topbar">
             <a class="logo" href="index.html" aria-label="Fluid Design home">Fluid<span>.</span></a>
             <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
@@ -26,13 +31,8 @@
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="work.html">Work</a>
+                <a href="playground.html">Playground</a>
                 <a href="contact.html" aria-current="page">Contact</a>
-            </div>
-            <div class="social-media" aria-label="Social media links">
-                <a href="#" aria-label="Facebook Messenger"><i class="fab fa-facebook-messenger"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
         </nav>
 
@@ -40,19 +40,29 @@
             <header class="page-intro">
                 <span class="page-kicker">Get in touch</span>
                 <h1>Have an idea?<br>Let’s shape it.</h1>
-                <p>For collaborations, questions, or just to say hello, send a note. Replace the sample email below with your preferred contact address before publishing.</p>
+                <p>This is a static concept site. Use the sample address below as a template, or replace it with a real contact destination for your own deployment.</p>
             </header>
 
             <div class="contact-layout">
                 <section class="page-panel">
                     <h2>Start a conversation</h2>
-                    <p>Share a little about what you’re working on and what you’d like to make better. We’ll get back to you as soon as possible.</p>
+                    <p>For a useful first message, include a short note about:</p>
+                    <ul class="contact-prompts">
+                        <li>Scope: what you are hoping to make</li>
+                        <li>Timeline: any important dates</li>
+                        <li>Budget: a range, if you have one</li>
+                    </ul>
                     <a class="contact-link" href="mailto:hello@example.com">hello@example.com</a>
-                    <p class="contact-note">Sample address — update this link in <code>contact.html</code> before launch.</p>
+                    <div class="copy-email-row">
+                        <button class="secondary-btn copy-email" type="button" data-email="hello@example.com">Copy email</button>
+                        <span class="copy-status" aria-live="polite"></span>
+                    </div>
+                    <p class="contact-note">Sample address — replace the address and button data in <code>contact.html</code> before publishing. This static site does not submit or store messages.</p>
                 </section>
                 <aside class="page-panel">
-                    <h2>Good projects start with a chat.</h2>
-                    <p>Have a look at the <a href="work.html">selected work</a> or learn more <a href="about.html">about the approach</a>.</p>
+                    <h2>About response times</h2>
+                    <p>This is a front-end demonstration and no mailbox is monitored by the site. Once you replace the sample address, set expectations for replies through that inbox directly.</p>
+                    <p>Explore the <a href="work.html">concept studies</a> or learn about the <a href="about.html">design approach</a>.</p>
                 </aside>
             </div>
         </main>
@@ -62,6 +72,7 @@
         </footer>
     </div>
     <script src="js/site.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>

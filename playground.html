@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Customize a glass panel with color, blur, opacity, radius, background, and motion controls.">
+    <meta name="theme-color" content="#071826">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fluid Playground | Fluid Design">
+    <meta property="og:description" content="A small hands-on playground for glass UI styling and CSS.">
+    <title>Fluid Playground | Fluid Design</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/flui-skin.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+</head>
+<body>
+    <div class="home-section page-shell ambient">
+        <header class="topbar">
+            <a class="logo" href="index.html" aria-label="Fluid Design home">Fluid<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        </header>
+        <nav class="side-panel" id="site-navigation" aria-label="Main navigation">
+            <div class="nav-links">
+                <a href="index.html">Home</a><a href="about.html">About</a><a href="work.html">Work</a><a href="playground.html" aria-current="page">Playground</a><a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <main class="page-content playground-content">
+            <header class="page-intro">
+                <span class="page-kicker">Fluid Playground</span>
+                <h1>Make the glass yours.</h1>
+                <p>Adjust the surface, change the atmosphere, then copy the CSS. All presets are built in, so this playground works without a network connection or server-side code.</p>
+            </header>
+
+            <div class="playground-layout">
+                <section class="playground-controls page-panel" aria-labelledby="controls-heading">
+                    <h2 id="controls-heading">Tune the panel</h2>
+                    <label class="control-field" for="color-preset">Color preset
+                        <select id="color-preset">
+                            <option value="ocean">Ocean glass</option>
+                            <option value="lagoon">Lagoon</option>
+                            <option value="ember">Ember</option>
+                            <option value="violet">Violet haze</option>
+                        </select>
+                    </label>
+                    <label class="control-field" for="gradient-direction">Gradient direction
+                        <select id="gradient-direction">
+                            <option value="135deg">Diagonal · 135°</option>
+                            <option value="45deg">Diagonal · 45°</option>
+                            <option value="90deg">Horizontal · 90°</option>
+                            <option value="180deg">Vertical · 180°</option>
+                        </select>
+                    </label>
+                    <label class="range-field" for="blur-strength"><span>Blur <output id="blur-value" for="blur-strength">14px</output></span>
+                        <input id="blur-strength" type="range" min="0" max="30" value="14">
+                    </label>
+                    <label class="range-field" for="panel-opacity"><span>Panel opacity <output id="opacity-value" for="panel-opacity">18%</output></span>
+                        <input id="panel-opacity" type="range" min="5" max="60" value="18">
+                    </label>
+                    <label class="range-field" for="panel-radius"><span>Border radius <output id="radius-value" for="panel-radius">24px</output></span>
+                        <input id="panel-radius" type="range" min="0" max="48" value="24">
+                    </label>
+                    <label class="control-field" for="background-choice">Background
+                        <select id="background-choice">
+                            <option value="bg-1.webp">Deep tide</option>
+                            <option value="bg-2.webp">Glacier</option>
+                            <option value="bg.webp">Ink in water</option>
+                            <option value="bubble.webp">Soft bubble</option>
+                        </select>
+                    </label>
+                    <label class="range-field" for="motion-intensity"><span>Motion intensity <output id="motion-value" for="motion-intensity">20%</output></span>
+                        <input id="motion-intensity" type="range" min="0" max="100" value="20">
+                    </label>
+                    <div class="playground-actions">
+                        <button class="primary-btn copy-css" id="copy-css" type="button" disabled>Copy CSS</button>
+                        <button class="secondary-btn reset-playground" id="reset-playground" type="button">Reset</button>
+                    </div>
+                    <p class="copy-status" id="playground-status" aria-live="polite"></p>
+                    <noscript><p class="contact-note">Enable JavaScript to adjust the controls and copy generated CSS. The default CSS is shown below.</p></noscript>
+                </section>
+
+                <section class="playground-preview-column" aria-label="Panel preview and generated CSS">
+                    <div class="playground-stage" id="playground-stage" data-background="bg-1.webp">
+                        <article class="glass-preview" id="glass-preview">
+                            <span class="concept-label">A little atmosphere</span>
+                            <h2>Clear content.<br>Fluid surface.</h2>
+                            <p>A glass panel responds to your choices. Try changing its color, softness, and shape.</p>
+                            <a class="text-link" href="work/interface-concept.html">See the interface study <span aria-hidden="true">→</span></a>
+                        </article>
+                    </div>
+                    <section class="css-output-panel page-panel" aria-labelledby="css-output-title">
+                        <div class="css-output-heading">
+                            <h2 id="css-output-title">Generated CSS</h2>
+                            <span>Copy and adapt</span>
+                        </div>
+                        <pre><code id="css-output">.glass-panel {
+  background: linear-gradient(135deg, rgba(143, 231, 255, 0.18), rgba(94, 211, 255, 0.09));
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 24px;
+}</code></pre>
+                    </section>
+                </section>
+            </div>
+        </main>
+        <footer><div class="footer"><span>&copy; 2026 Fluid Design</span></div></footer>
+    </div>
+    <script src="js/site.js"></script>
+    <script src="js/playground.js"></script>
+</body>
+</html>

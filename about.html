@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn about the ideas and design principles behind Fluid Design.">
+    <meta name="theme-color" content="#071826">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About | Fluid Design">
+    <meta property="og:description" content="The process and principles behind the Fluid Design concept project.">
     <title>About | Fluid Design</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/flui-skin.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
 </head>
 
 <body>
-    <div class="home-section page-shell">
+    <div class="home-section page-shell ambient">
         <header class="topbar">
             <a class="logo" href="index.html" aria-label="Fluid Design home">Fluid<span>.</span></a>
             <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
@@ -26,13 +31,8 @@
                 <a href="index.html">Home</a>
                 <a href="about.html" aria-current="page">About</a>
                 <a href="work.html">Work</a>
+                <a href="playground.html">Playground</a>
                 <a href="contact.html">Contact</a>
-            </div>
-            <div class="social-media" aria-label="Social media links">
-                <a href="#" aria-label="Facebook Messenger"><i class="fab fa-facebook-messenger"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
         </nav>
 
@@ -40,26 +40,51 @@
             <header class="page-intro">
                 <span class="page-kicker">About the project</span>
                 <h1>Good design<br>should feel natural.</h1>
-                <p>Fluid Design is a creative space for clear, expressive digital experiences. The idea is simple: bring thoughtful design and smooth interactions together, so every detail feels like it belongs.</p>
+                <p>Fluid Design is a self-directed visual study about creating digital spaces that feel expressive while remaining clear, useful, and accessible.</p>
             </header>
 
             <div class="about-layout">
                 <section class="page-panel">
-                    <h2>Design with intention</h2>
-                    <p>Fluid Design explores the space between visual design and the web: shaping useful interfaces, building a distinct mood, and refining the small details that make a digital experience feel considered.</p>
-                    <p>This portfolio is a snapshot of that process. The featured concepts are visual explorations and can be replaced with finished projects as the work grows.</p>
+                    <h2>Principles</h2>
+                    <ul class="principle-list">
+                        <li><strong>Clarity:</strong> keep hierarchy legible even when surfaces are layered.</li>
+                        <li><strong>Atmosphere:</strong> use color and imagery to establish a mood with purpose.</li>
+                        <li><strong>Restraint:</strong> let motion and decoration support the content.</li>
+                        <li><strong>Accessibility:</strong> preserve keyboard access, readable contrast, and reduced-motion options.</li>
+                    </ul>
                 </section>
                 <aside class="page-panel">
-                    <h2>What I’m drawn to</h2>
-                    <p>Simple systems, atmospheric color, generous space, and motion that supports the experience rather than competing with it.</p>
+                    <h2>Tools &amp; skills</h2>
+                    <p>The site is made with semantic HTML, responsive CSS, and vanilla JavaScript. Its interaction studies use native browser APIs and local assets, without a build pipeline or external runtime dependencies.</p>
                     <ul class="skills-list" aria-label="Design interests">
                         <li>Interface design</li>
-                        <li>Visual identity</li>
-                        <li>Front-end</li>
-                        <li>Motion</li>
+                        <li>Visual systems</li>
+                        <li>CSS layout &amp; effects</li>
+                        <li>JavaScript interactions</li>
+                        <li>Accessibility</li>
                     </ul>
                 </aside>
             </div>
+
+            <section class="process-section" aria-labelledby="process-title">
+                <div class="section-heading">
+                    <span>How the study is structured</span>
+                    <h2 id="process-title">A simple four-step process.</h2>
+                </div>
+                <ol class="process-list">
+                    <li><strong>Frame</strong><span>Define the experience question and its constraints.</span></li>
+                    <li><strong>Explore</strong><span>Compare visual directions before committing to one.</span></li>
+                    <li><strong>Build</strong><span>Translate the selected direction into responsive, semantic pages.</span></li>
+                    <li><strong>Refine</strong><span>Check interaction, accessibility, and behavior across screen sizes.</span></li>
+                </ol>
+            </section>
+
+            <section class="page-panel exploring-panel">
+                <span class="page-kicker">Currently exploring</span>
+                <h2>How much atmosphere can an interface carry and still feel effortless?</h2>
+                <p>The case studies and Fluid Playground unpack that question through interface, identity, motion, and web concepts.</p>
+                <a class="text-link" href="playground.html">Try the Fluid Playground <span aria-hidden="true">→</span></a>
+            </section>
         </main>
 
         <footer>

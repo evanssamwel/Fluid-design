@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A concept case study exploring glass surfaces, contrast, and interface hierarchy.">
+    <meta name="theme-color" content="#071826">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Glass UI | Fluid Design">
+    <meta property="og:description" content="An interface concept study in translucent surfaces and clear hierarchy.">
+    <title>Glass UI — Interface Concept | Fluid Design</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/flui-skin.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css">
+</head>
+<body>
+    <div class="home-section page-shell case-page ambient">
+        <header class="topbar">
+            <a class="logo" href="../index.html" aria-label="Fluid Design home">Fluid<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        </header>
+        <nav class="side-panel" id="site-navigation" aria-label="Main navigation">
+            <div class="nav-links">
+                <a href="../index.html">Home</a><a href="../about.html">About</a><a href="../work.html" aria-current="location">Work</a><a href="../playground.html">Playground</a><a href="../contact.html">Contact</a>
+            </div>
+        </nav>
+        <main class="page-content case-content">
+            <a class="back-link" href="../work.html">← All concepts</a>
+            <header class="page-intro">
+                <span class="page-kicker">Concept project · Interface</span>
+                <h1>Glass UI</h1>
+                <p>How can translucent layers add atmosphere without making an interface harder to read?</p>
+            </header>
+            <dl class="project-meta">
+                <div><dt>Type</dt><dd>Interface design concept</dd></div>
+                <div><dt>Year</dt><dd>2026</dd></div>
+                <div><dt>Role</dt><dd>Independent design and front-end exploration</dd></div>
+                <div><dt>Tools</dt><dd>HTML, CSS, vanilla JavaScript</dd></div>
+                <div><dt>Deliverables</dt><dd>Responsive page, glass-surface styles, interaction prototype</dd></div>
+            </dl>
+            <figure class="case-visual">
+                <picture>
+                    <source srcset="../img/bg-1.webp" type="image/webp">
+                    <img src="../img/bg-1.jpg" width="1920" height="1280" alt="Dark teal liquid marbling used as the visual moodboard for the Glass UI concept" fetchpriority="high">
+                </picture>
+                <figcaption>Atmosphere reference for the interface concept, not a client deliverable.</figcaption>
+            </figure>
+            <div class="case-sections">
+                <section class="case-section">
+                    <span class="page-kicker">The question</span>
+                    <h2>Atmosphere needs hierarchy.</h2>
+                    <p>Glassmorphism can create depth, but stacking translucent surfaces over detailed imagery can reduce contrast and blur the visual order. This concept explores a calmer balance between a distinctive mood and readable content.</p>
+                </section>
+                <section class="case-section">
+                    <h2>Goals &amp; constraints</h2>
+                    <ul><li>Keep text and controls clearly separated from decorative imagery.</li><li>Use blur and transparency as accents rather than applying them everywhere.</li><li>Keep the design responsive and implementable with native CSS.</li><li>Respect reduced-motion preferences and keyboard interaction.</li></ul>
+                </section>
+                <section class="case-section">
+                    <h2>Design exploration</h2>
+                    <p>Three directions were considered: a highly transparent panel, a more opaque card, and a restrained layered surface. The strongest direction uses an opaque-enough content panel with a subtle border, a darker image overlay, and one accent color. These are design alternatives, not a record of formal user testing.</p>
+                </section>
+                <section class="case-section">
+                    <h2>Final direction &amp; decisions</h2>
+                    <p>The concept keeps the visual texture behind the content while treating the text panel as the primary reading surface. Blur is limited to selected panels, borders define edges, and spacing—not glow—does most of the hierarchy work.</p>
+                    <a class="text-link" href="../playground.html">Adjust the glass panel in the Playground <span aria-hidden="true">→</span></a>
+                </section>
+                <section class="case-section">
+                    <h2>What I learned</h2>
+                    <p>Transparency is not a substitute for contrast. A useful next step would be checking text contrast across more background crops and testing the panel with longer, realistic content.</p>
+                </section>
+            </div>
+            <nav class="case-pagination" aria-label="Other concept case studies">
+                <a href="web-concept.html">← Previous: Open Space</a><a href="brand-concept.html">Next: Minimal Brand →</a>
+            </nav>
+        </main>
+        <footer><div class="footer"><span>&copy; 2026 Fluid Design</span></div></footer>
+    </div>
+    <script src="../js/site.js"></script>
+</body>
+</html>

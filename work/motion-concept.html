@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A motion concept study about gentle transitions, attention, and reduced motion.">
+    <meta name="theme-color" content="#071826">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Fluid Motion | Fluid Design">
+    <meta property="og:description" content="An interaction concept for purposeful, reduced-motion-aware transitions.">
+    <title>Fluid Motion — Interaction Concept | Fluid Design</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/flui-skin.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css">
+</head>
+<body>
+    <div class="home-section page-shell case-page ambient">
+        <header class="topbar">
+            <a class="logo" href="../index.html" aria-label="Fluid Design home">Fluid<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        </header>
+        <nav class="side-panel" id="site-navigation" aria-label="Main navigation">
+            <div class="nav-links">
+                <a href="../index.html">Home</a><a href="../about.html">About</a><a href="../work.html" aria-current="location">Work</a><a href="../playground.html">Playground</a><a href="../contact.html">Contact</a>
+            </div>
+        </nav>
+        <main class="page-content case-content">
+            <a class="back-link" href="../work.html">← All concepts</a>
+            <header class="page-intro">
+                <span class="page-kicker">Concept project · Motion</span>
+                <h1>Fluid Motion</h1>
+                <p>How can movement make an interface feel responsive without competing with what it communicates?</p>
+            </header>
+            <dl class="project-meta">
+                <div><dt>Type</dt><dd>Interaction and motion concept</dd></div>
+                <div><dt>Year</dt><dd>2026</dd></div>
+                <div><dt>Role</dt><dd>Independent interaction design and front-end exploration</dd></div>
+                <div><dt>Tools</dt><dd>CSS transitions, vanilla JavaScript, browser motion preferences</dd></div>
+                <div><dt>Deliverables</dt><dd>Pointer-responsive atmosphere and adjustable panel motion</dd></div>
+            </dl>
+            <figure class="case-visual">
+                <picture>
+                    <source srcset="../img/bg.webp" type="image/webp">
+                    <img src="../img/bg.jpg" width="1920" height="1280" alt="Blue ink diffusing through dark water used as the Fluid Motion moodboard" fetchpriority="high">
+                </picture>
+                <figcaption>Motion and color inspiration; the image itself is static.</figcaption>
+            </figure>
+            <div class="case-sections">
+                <section class="case-section">
+                    <span class="page-kicker">The question</span>
+                    <h2>Motion should explain a relationship.</h2>
+                    <p>This concept explores motion as a cue for focus and response: small changes that acknowledge pointer movement or a control change, rather than decorative animation that runs without a reason.</p>
+                </section>
+                <section class="case-section">
+                    <h2>Goals &amp; constraints</h2>
+                    <ul><li>Keep movement subtle and secondary to the content.</li><li>Do not make core navigation or information depend on animation.</li><li>Reduce or remove motion for users who request it.</li><li>Keep the atmosphere static on touch devices and when the tab is hidden.</li></ul>
+                </section>
+                <section class="case-section">
+                    <h2>Design exploration</h2>
+                    <p>Possible treatments ranged from continuous drifting, to a pointer-following glow, to motion only on interaction. This project uses the restrained route: the pointer glow is decorative, responds softly, and is omitted for touch and reduced-motion users. The playground’s panel motion is user-adjustable.</p>
+                </section>
+                <section class="case-section">
+                    <h2>Final direction &amp; decisions</h2>
+                    <p>A single atmospheric layer follows pointer position via a throttled animation frame. It is hidden when the document is not visible and never carries essential content. The CSS also disables transitions and keyframes under <code>prefers-reduced-motion</code>.</p>
+                </section>
+                <section class="case-section">
+                    <h2>What I learned</h2>
+                    <p>Motion needs a clear off switch and a useful static state. A next iteration would test the movement with more devices and gather feedback on whether the effect improves orientation or simply adds decoration.</p>
+                </section>
+            </div>
+            <nav class="case-pagination" aria-label="Other concept case studies">
+                <a href="brand-concept.html">← Previous: Minimal Brand</a><a href="web-concept.html">Next: Open Space →</a>
+            </nav>
+        </main>
+        <footer><div class="footer"><span>&copy; 2026 Fluid Design</span></div></footer>
+    </div>
+    <script src="../js/site.js"></script>
+</body>
+</html>
