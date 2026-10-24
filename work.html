@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore selected design concepts from Fluid Design.">
+    <meta name="description" content="Explore four concept studies in interface, brand, motion, and web design.">
+    <meta name="theme-color" content="#071826">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Selected Work | Fluid Design">
+    <meta property="og:description" content="Four illustrative interface, identity, motion, and web concepts.">
     <title>Selected Work | Fluid Design</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/flui-skin.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
 </head>
 
 <body>
-    <div class="home-section page-shell">
+    <div class="home-section page-shell ambient">
         <header class="topbar">
             <a class="logo" href="index.html" aria-label="Fluid Design home">Fluid<span>.</span></a>
             <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
@@ -26,13 +31,8 @@
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="work.html" aria-current="page">Work</a>
+                <a href="playground.html">Playground</a>
                 <a href="contact.html">Contact</a>
-            </div>
-            <div class="social-media" aria-label="Social media links">
-                <a href="#" aria-label="Facebook Messenger"><i class="fab fa-facebook-messenger"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
         </nav>
 
@@ -40,41 +40,71 @@
             <header class="page-intro">
                 <span class="page-kicker">Selected work</span>
                 <h1>Ideas in motion.</h1>
-                <p>A collection of visual directions exploring atmosphere, identity, and the way thoughtful interfaces can make digital experiences feel more human.</p>
+                <p>Four concept studies exploring atmosphere, identity, and useful interactions. These are design explorations, not commissioned client projects or measured case studies.</p>
             </header>
 
+            <div class="work-filters" aria-label="Filter concepts" hidden>
+                <button type="button" data-filter="all" aria-pressed="true">All concepts</button>
+                <button type="button" data-filter="interface" aria-pressed="false">Interface</button>
+                <button type="button" data-filter="brand" aria-pressed="false">Brand</button>
+                <button type="button" data-filter="motion" aria-pressed="false">Motion</button>
+                <button type="button" data-filter="web" aria-pressed="false">Web</button>
+            </div>
+            <p class="filter-status" aria-live="polite"></p>
+
             <section class="work-grid" aria-label="Portfolio concepts">
-                <article class="work-card">
-                    <div class="project-visual visual-one" aria-hidden="true"></div>
-                    <div class="work-card-copy">
-                        <span>Interface concept</span>
-                        <h2>Glass UI</h2>
-                        <p>A calm, layered interface study balancing translucent surfaces with clear content hierarchy.</p>
-                    </div>
+                <article class="work-card" data-category="interface">
+                    <a class="work-card-link" href="work/interface-concept.html">
+                        <picture>
+                            <source srcset="img/bg-1.webp" type="image/webp">
+                            <img class="project-visual" src="img/bg-1.jpg" width="1920" height="1280" alt="Dark teal liquid marbling moodboard for Glass UI" loading="lazy">
+                        </picture>
+                        <div class="work-card-copy">
+                            <span class="concept-label">Concept project · Interface</span>
+                            <h2>Glass UI</h2>
+                            <p>A calm, layered interface study balancing translucent surfaces with clear content hierarchy.</p>
+                        </div>
+                        <span class="text-link">View case study <span aria-hidden="true">→</span></span>
+                    </a>
                 </article>
-                <article class="work-card">
-                    <div class="project-visual visual-two" aria-hidden="true"></div>
-                    <div class="work-card-copy">
-                        <span>Art direction</span>
-                        <h2>Minimal Brand</h2>
-                        <p>A warm visual system using restrained color and simple forms to create a memorable identity.</p>
-                    </div>
+                <article class="work-card" data-category="brand">
+                    <a class="work-card-link" href="work/brand-concept.html">
+                        <picture>
+                            <source srcset="img/bg-2.webp" type="image/webp">
+                            <img class="project-visual" src="img/bg-2.jpg" width="1920" height="1280" alt="Blue and warm earth-toned liquid marbling moodboard for Minimal Brand" loading="lazy">
+                        </picture>
+                        <div class="work-card-copy">
+                            <span class="concept-label">Concept project · Brand</span>
+                            <h2>Minimal Brand</h2>
+                            <p>A warm visual system using restrained color and simple forms to create a memorable identity.</p>
+                        </div>
+                        <span class="text-link">View case study <span aria-hidden="true">→</span></span>
+                    </a>
                 </article>
-                <article class="work-card">
-                    <div class="project-visual visual-three" aria-hidden="true"></div>
-                    <div class="work-card-copy">
-                        <span>Interaction study</span>
-                        <h2>Fluid Motion</h2>
-                        <p>A study in gentle movement, using transitions to guide attention and make the interface feel responsive.</p>
-                    </div>
+                <article class="work-card" data-category="motion">
+                    <a class="work-card-link" href="work/motion-concept.html">
+                        <picture>
+                            <source srcset="img/bg.webp" type="image/webp">
+                            <img class="project-visual" src="img/bg.jpg" width="1920" height="1280" alt="Blue ink diffusing in dark water moodboard for Fluid Motion" loading="lazy">
+                        </picture>
+                        <div class="work-card-copy">
+                            <span class="concept-label">Concept project · Motion</span>
+                            <h2>Fluid Motion</h2>
+                            <p>A study in gentle movement, using transitions to guide attention and make the interface feel responsive.</p>
+                        </div>
+                        <span class="text-link">View case study <span aria-hidden="true">→</span></span>
+                    </a>
                 </article>
-                <article class="work-card">
-                    <div class="project-visual visual-four" aria-hidden="true"></div>
-                    <div class="work-card-copy">
-                        <span>Web concept</span>
-                        <h2>Open Space</h2>
-                        <p>A digital editorial concept built around generous whitespace, readable type, and a slower pace.</p>
-                    </div>
+                <article class="work-card" data-category="web">
+                    <a class="work-card-link" href="work/web-concept.html">
+                        <div class="project-visual visual-four" role="img" aria-label="Warm-to-violet gradient moodboard for Open Space"></div>
+                        <div class="work-card-copy">
+                            <span class="concept-label">Concept project · Web</span>
+                            <h2>Open Space</h2>
+                            <p>A digital editorial concept built around generous whitespace, readable type, and a slower pace.</p>
+                        </div>
+                        <span class="text-link">View case study <span aria-hidden="true">→</span></span>
+                    </a>
                 </article>
             </section>
         </main>
@@ -84,6 +114,7 @@
         </footer>
     </div>
     <script src="js/site.js"></script>
+    <script src="js/work.js"></script>
 </body>
 
 </html>
