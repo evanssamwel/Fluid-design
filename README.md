@@ -4,8 +4,6 @@
 
 A responsive, multi-page portfolio concept with a fluid glass aesthetic, atmospheric color, and calm interactions. Built with plain HTML, CSS, and JavaScript — no frameworks, build tools, or runtime dependencies.
 
-![Fluid Design preview](https://user-images.githubusercontent.com/37956873/136699977-a33e4607-fee9-4169-957a-3d7f76a3afd6.png)
-
 ## Explore the site
 
 | Page | What you’ll find |
